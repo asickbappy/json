@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <h1>JSON Explorer</h1>
+    <P>placeholder website</P>
+
+
+    <script>
+
+        const user = {
+            id: 2464444447345,
+            name: "ovi",
+            lover: {
+                name: "sad",
+            favFood: "pizza"
+
+            },
+              friendsAge: [22, 32, 24, 55],
+            friends: ["kama", "jamal", "sam"]
+        };
+        const userJSON = JSON.stringify(user);
+        console.log(userJSON);
+
+        const userFromJSON = JSON.parse(userJSON);
+        console.log(userFromJSON);
+    </script>
+    
+</body>
+</html>
